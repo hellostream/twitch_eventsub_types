@@ -1,0 +1,19 @@
+name: Elixir Package
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "eventsub.json"
+      - "packages/elixir/**"
+jobs:
+  call-test:
+    uses: ./.github/workflows/elixir-test.yml
+
+  build-and-publish:
+    name: Build and Publish
+    needs: call-test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "TODO - Build package"
