@@ -1,0 +1,27 @@
+{
+  "name": "twitch-eventsub-types",
+  "version": "0.0.1",
+  "description": "Typescript definitions for Twitch EventSub",
+  "main": "",
+  "scripts": {
+    "build": "bin/gen-typemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellostream/twitch_eventsub_types.git"
+  },
+  "keywords": [
+    "twitch",
+    "typescript"
+  ],
+  "author": "cgsdev0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hellostream/twitch_eventsub_types/issues"
+  },
+  "homepage": "https://github.com/hellostream/twitch_eventsub_types",
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "quicktype": "^23.0.11"
+  }
+}
